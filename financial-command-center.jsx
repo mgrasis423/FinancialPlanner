@@ -599,7 +599,7 @@ export default function App(){
             <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(180px,1fr))",gap:8}}>
               {[
                 ["🏠 Housing (PITI)",calc.totalHousing,C.red, `${pct(calc.frontDTI)} front-end DTI`],
-                ["💳 Debt Payments",calc.debtPmt,C.amber,`${calc.debts.length} debts`],
+                ["💳 Debt Payments",calc.debtPmt,C.amber,`${debts.length} debts`],
                 ["🛒 Living + Subs",expenses+subscriptions,C.blue,"non-negotiable"],
                 ["📈 Roth IRA",calc.alloc.roth,C.purple,calc.alloc.roth>=583?"maxing out":"below max ($583/mo)"],
                 ["📊 Brokerage",calc.alloc.brokerage,C.purple,`${riskTolerance} risk`],
